@@ -1,0 +1,104 @@
+---
+layout: landing
+---
+<!-- Banner -->
+<section id="banner">
+	<div class="inner">
+		<h2>{{ site.title }}</h2>
+		<p>{{ site.description | markdownify }}</p>
+		<ul class="actions">
+			<li><a href="#" class="button special">Agendar Tour</a></li>
+		</ul>
+	</div>
+	<a href="#one" class="more scrolly">Saiba Mais</a>
+</section>
+
+<!-- One -->
+<section id="one" class="wrapper style1 special">
+	<div class="inner">
+		<header class="major">
+			<h2>Venha ser guiado para o melhor que orlando tem a oferecer</h2>
+			<p>Seja para curtir as férias ou para chegar rápido aos locais em uma viagem de negócios conte com a gente
+				para te guiar em orlando</p>
+		</header>
+		<ul class="icons major">
+			<li><span class="icon fa-globe major style1"><span class="label">Lorem</span></span></li>
+			<li><span class="icon fa-plane major style2"><span class="label">Ipsum</span></span></li>
+			<li><span class="icon fa-camera major style3"><span class="label">Dolor</span></span></li>
+		</ul>
+	</div>
+</section>
+
+<!-- Two -->
+<section id="two" class="wrapper alt style2">
+	<section class="spotlight">
+		<div class="image"><img src="images/pic01.jpg" alt="" /></div>
+		<div class="content">
+			<h2>Grupos</h2>
+			<p>Atendimento a grupos para maximizar a experiência nos parques.
+				Universal express e Disney fastpass para o grupo todo.</p>
+		</div>
+	</section>
+	<section class="spotlight">
+		<div class="image"><img src="images/pic02.jpg" alt="" /></div>
+		<div class="content">
+			<h2>Individual</h2>
+			<p>Não fique sem companhia para curtir tudo que orlando
+				tem a oferecer e ainda aproveite todas as vantagens
+				de um guia que conhece tudo dos parques.</p>
+		</div>
+	</section>
+	<section class="spotlight">
+		<div class="image"><img src="images/pic03.jpg" alt="" /></div>
+		<div class="content">
+			<h2>Empresas</h2>
+			<p>Guia para empresas, otimize seu tempo na cidade,
+				seja para eventos, reuniões ou fechamento de negócios,
+				conte com quem conhece a cidade.</p>
+		</div>
+	</section>
+</section>
+
+<!-- Three -->
+<section id="three" class="wrapper style3 special">
+	<div class="inner">
+		<header class="major">
+			<h2>Depoimentos</h2>
+			<p>Confie em que já viveu essa experiência</p>
+		</header>
+		<ul class="features">
+			{% for testimony in site.testimonies %}
+			<li>
+				<div class="flex">
+					<div>
+						<img class="avatar" src="{{testimony.picture}}" alt="avatar1" />
+					</div>
+					<div>
+						<h3 class="align-right">{{testimony.name}}</h3>
+						<h6 class="align-right">{{testimony.home-country}}</h6>
+					</div>
+				</div>
+				<p class="justified">{{testimony.testimony}}</p>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
+<section id="four" class="wrapper style6">
+
+</section>
+
+<!-- CTA -->
+<section id="cta" class="wrapper style4">
+	<div class="inner">
+		<header>
+			<h2>Arcue ut vel commodo</h2>
+			<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+		</header>
+		<ul class="actions vertical">
+			<li><a href="#" class="button fit special">Activate</a></li>
+			<li><a href="#" class="button fit">Learn More</a></li>
+		</ul>
+	</div>
+</section>
