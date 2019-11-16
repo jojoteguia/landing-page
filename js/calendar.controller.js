@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
   var calendarEl = createElement('div', 'calendar');
   var shadow = calendarContainerEl.attachShadow({ mode: 'open' });
 
-  shadow.appendChild(createStylesheet('/fullcalendar/core/main.css'));
-  shadow.appendChild(createStylesheet('/fullcalendar/daygrid/main.css'));
-  shadow.appendChild(createStylesheet('/css/calendar.css'));
+  shadow.appendChild(createStylesheet('fullcalendar/core/main.css'));
+  shadow.appendChild(createStylesheet('fullcalendar/daygrid/main.css'));
+  shadow.appendChild(createStylesheet('css/calendar.css'));
 
-  shadow.appendChild(createScript('/fullcalendar/core/main.js'));
-  shadow.appendChild(createScript('/fullcalendar/daygrid/main.js'));
-  shadow.appendChild(createScript('/fullcalendar/core/locales/pt-br.js'));
+  shadow.appendChild(createScript('fullcalendar/core/main.js'));
+  shadow.appendChild(createScript('fullcalendar/daygrid/main.js'));
+  shadow.appendChild(createScript('fullcalendar/core/locales/pt-br.js'));
   shadow.appendChild(calendarEl);
 
   var calendar = createCalendar(calendarEl);
