@@ -2,6 +2,7 @@
 #
 
 # Site settings
+root: /
 title: JoJo Te Guia
 description: |
   Jonas Imai,   
