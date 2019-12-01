@@ -3,6 +3,10 @@
     padding-left: 15em;
 }
 
+.modal, .modal h1 {
+    color: #000
+}
+
 @media (max-width: 1024px)
 {
     #calendar-container {

@@ -50,24 +50,30 @@ function isMobile() {
 
 function getViewType() {
   if (isMobile()) {
-    //return 'dayGridWeek';
-    return 'dayGridMonth'
+    return 'dayGridWeek';
   } else {
     return 'dayGridMonth';
   }
 }
 
 function createCalendar(element) {
-  return new FullCalendar.Calendar(element, {
+  const calendar = new FullCalendar.Calendar(element, {
     plugins: ['dayGrid', 'googleCalendar', 'interaction'],
     defaultView: getViewType(),
     locale: 'pt-br',
     googleCalendarApiKey: 'AIzaSyArMHu3z3sMUauCB9BnW9qGZu7mprSCcY8',
     events: {
-      googleCalendarId: '6jhafhe4v2fbek8arkiaogluig@group.calendar.google.com'
+      googleCalendarId: '6jhafhe4v2fbek8arkiaogluig@group.calendar.google.com',
     },
     displayEventTime: true,
     displayEventEnd: true,
-    selectable: true
+    selectable: true,
+    selectOverlap: false,
+    longPressDelay: 200,
+    select: function(evt) {
+      $('.modal').modal();
+    }
   });
+
+  return calendar;
 }
