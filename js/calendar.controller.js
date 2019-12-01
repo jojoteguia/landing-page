@@ -5,11 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   shadow.appendChild(createStylesheet('fullcalendar/core/main.css'));
   shadow.appendChild(createStylesheet('fullcalendar/daygrid/main.css'));
+  shadow.appendChild(createStylesheet('fullcalendar/timegrid/main.css'));
   shadow.appendChild(createStylesheet('css/calendar.css'));
-
-  shadow.appendChild(createScript('fullcalendar/core/main.js'));
-  shadow.appendChild(createScript('fullcalendar/daygrid/main.js'));
-  shadow.appendChild(createScript('fullcalendar/core/locales/pt-br.js'));
+  shadow.appendChild(createStylesheet('fullcalendar/bootstrap/main.css'));
   shadow.appendChild(calendarEl);
 
   var calendar = createCalendar(calendarEl);
@@ -39,9 +37,37 @@ function createElement(elmt, id, clazz = '') {
   return element;
 }
 
+function isMobile() {
+  return (navigator.userAgent.match(/Android/i)
+    || navigator.userAgent.match(/webOS/i)
+    || navigator.userAgent.match(/iPhone/i)
+    || navigator.userAgent.match(/iPad/i)
+    || navigator.userAgent.match(/iPod/i)
+    || navigator.userAgent.match(/BlackBerry/i)
+    || navigator.userAgent.match(/Windows Phone/i)
+  );
+}
+
+function getViewType() {
+  if (isMobile()) {
+    //return 'dayGridWeek';
+    return 'dayGridMonth'
+  } else {
+    return 'dayGridMonth';
+  }
+}
+
 function createCalendar(element) {
   return new FullCalendar.Calendar(element, {
-    plugins: ['dayGrid'],
-    locale: 'pt-br'
+    plugins: ['dayGrid', 'googleCalendar', 'interaction'],
+    defaultView: getViewType(),
+    locale: 'pt-br',
+    googleCalendarApiKey: 'AIzaSyArMHu3z3sMUauCB9BnW9qGZu7mprSCcY8',
+    events: {
+      googleCalendarId: '6jhafhe4v2fbek8arkiaogluig@group.calendar.google.com'
+    },
+    displayEventTime: true,
+    displayEventEnd: true,
+    selectable: true
   });
 }

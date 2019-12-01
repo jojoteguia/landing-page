@@ -2,3 +2,11 @@
     padding-right: 15em;
     padding-left: 15em;
 }
+
+@media (max-width: 1024px)
+{
+    #calendar-container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
