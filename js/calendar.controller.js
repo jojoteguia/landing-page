@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var calendar = createCalendar(calendarEl);
   calendar.render();
+  initModal();
 });
 
 function createScript(source) {
@@ -56,6 +57,24 @@ function getViewType() {
   }
 }
 
+function formatDate(date, locale) {
+  return new Intl.DateTimeFormat(locale).format(date);
+}
+
+function onSelect(evt) {
+  $('#members').val(1)
+  $('#start').val(formatDate(evt.start, 'pt-BR'))
+  $('#end').val(formatDate(evt.end.setDate(evt.end.getDate() - 1), 'pt-BR'));
+  $('.modal').modal();
+}
+
+function initModal() {
+  document.querySelector('#close-modal').addEventListener('click', function (evt) {
+    evt.preventDefault();
+    $.modal.close();
+  });
+}
+
 function createCalendar(element) {
   const calendar = new FullCalendar.Calendar(element, {
     plugins: ['dayGrid', 'googleCalendar', 'interaction'],
@@ -70,9 +89,7 @@ function createCalendar(element) {
     selectable: true,
     selectOverlap: false,
     longPressDelay: 200,
-    select: function(evt) {
-      $('.modal').modal();
-    }
+    select: onSelect
   });
 
   return calendar;

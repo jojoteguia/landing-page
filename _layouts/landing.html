@@ -7,23 +7,42 @@
 -->
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="landing">
+<body class="landing">
 
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
+  <!-- Page Wrapper -->
+  <div id="page-wrapper">
 
-      {% include header.html %}
+    {% include header.html %}
 
-      {{ content }}
+    {{ content }}
 
-      {% include footer.html %}
+    {% include footer.html %}
 
-      {% include scripts.html %}
+    {% include scripts.html %}
 
-    </div>
+  </div>
 
-  </body>
+  <div class="modal">
+    <form id="contact-form">
+      <h1>Solicitação de Orçamento</h1>
+      <h2>De:</h2>
+      <input id="start" name="start"></input>
+      <h2>Até:</h2>
+      <input id="end" name="end"></input>
+      <h2>Membros no Grupo</h2>
+      <input id="members" name="members" value="1"></input>
+      <h2>E-mail para Contato</h2>
+      <input id="email" name="email"></input>
+      <input type="hidden" id="days" name="days"></input>
+      <input type="hidden" id="estimate" name="estimate"></input>
+      <div>
+          <button type="submit" id="submit-estimate" >aprovar</button>
+          <button id="close-modal">cancelar</button>
+      </div>
+    </form>
+  </div>
+</body>
 
 </html>

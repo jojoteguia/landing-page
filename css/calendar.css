@@ -3,7 +3,11 @@
     padding-left: 15em;
 }
 
-.modal, .modal h1 {
+.modal, 
+.modal h1, 
+.modal h2, 
+.modal input, 
+.modal button {
     color: #000
 }
 
