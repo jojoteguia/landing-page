@@ -26,20 +26,32 @@
 
   <div class="modal">
     <form id="contact-form">
-      <h1>Solicitação de Orçamento</h1>
-      <h2>De:</h2>
-      <input id="start" name="start"></input>
-      <h2>Até:</h2>
-      <input id="end" name="end"></input>
-      <h2>Membros no Grupo</h2>
-      <input id="members" name="members" value="1"></input>
-      <h2>E-mail para Contato</h2>
-      <input id="email" name="email"></input>
-      <input type="hidden" id="days" name="days"></input>
-      <input type="hidden" id="estimate" name="estimate"></input>
-      <div>
-          <button type="submit" id="submit-estimate" >aprovar</button>
+      <div class="modal-container">
+        <h1>Solicitação de Orçamento</h1>
+        <div>
+          <div>
+            <label>De:</label>
+            <input id="start" name="start"></input>
+          </div>
+          <div>
+            <label>Até:</label>
+            <input id="end" name="end"></input>
+          </div>
+          <div>
+            <label>Membros no Grupo</label>
+            <input id="members" name="members" value="1"></input>
+          </div>
+          <div>
+            <label>E-mail para Contato</label>
+            <input id="email" name="email"></input>
+          </div>
+          <input type="hidden" id="days" name="days"></input>
+          <input type="hidden" id="estimate" name="estimate"></input>
+        </div>
+        <div>
+          <button type="submit" id="submit-estimate">aprovar</button>
           <button id="close-modal">cancelar</button>
+        </div>
       </div>
     </form>
   </div>

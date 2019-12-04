@@ -5,10 +5,21 @@
 
 .modal, 
 .modal h1, 
-.modal h2, 
+.modal label, 
 .modal input, 
 .modal button {
-    color: #000
+    color: #000; 
+    margin: 0px;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal div {
+    margin: 20px;
 }
 
 @media (max-width: 1024px)
