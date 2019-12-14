@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   shadow.appendChild(createStylesheet('fullcalendar/core/main.css'));
   shadow.appendChild(createStylesheet('fullcalendar/daygrid/main.css'));
   shadow.appendChild(createStylesheet('fullcalendar/timegrid/main.css'));
-  shadow.appendChild(createStylesheet('css/calendar.css'));
+  shadow.appendChild(createStylesheet('css/calendar-modal.css'));
   shadow.appendChild(createStylesheet('fullcalendar/bootstrap/main.css'));
   shadow.appendChild(calendarEl);
 
@@ -89,7 +89,13 @@ function createCalendar(element) {
     selectable: true,
     selectOverlap: false,
     longPressDelay: 200,
-    select: onSelect
+    select: onSelect,
+    eventDataTransform: function(data) {
+      return {
+        ...data,
+        rendering: 'background'
+      }
+    }
   });
 
   return calendar;
