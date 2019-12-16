@@ -491,7 +491,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&.style1 {
-			color: _palette(accent2, bg);
+			color: _palette(accent1, icon);
 		}
 
 		&.style2 {
@@ -1244,11 +1244,11 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&.style2 {
-			background-color: _palette(bg);
+			background-color: _palette(accent7,bg);
 		}
 
 		&.style3 {
-			@include wrapper(accent5);
+			@include wrapper(accent1);
 		}
 
 		&.style4 {
@@ -1527,7 +1527,6 @@ $baseurl: '{{ site.baseurl }}/images';
 
 		p {
 			letter-spacing: _size(letter-spacing-alt);
-			text-transform: uppercase;
 
 			a {
 				color: inherit;
@@ -1736,7 +1735,7 @@ $baseurl: '{{ site.baseurl }}/images';
 /* Footer */
 
 	#footer {
-		@include padding(6em, 0);
+		@include padding(2em, 0);
 		background-color: darken(_palette(bg), 8);
 		text-align: center;
 

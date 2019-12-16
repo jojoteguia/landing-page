@@ -33,3 +33,8 @@
 .fc-right {
     display: flex;
 }
+
+.logo img{
+    width: 25%;
+    min-width: 300px;
+}

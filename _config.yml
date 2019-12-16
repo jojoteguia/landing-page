@@ -4,10 +4,9 @@
 # Site settings
 title: JoJo Te Guia
 description: |
-  Jojô,   
-  é guia há X anos,   
-  atuando na região de orlando,   
-  Especialista nos parques da cidade.
+  Guiando há mais de 5 anos passeios dinâmicos e  
+  realizando roteiros turísticos  
+  únicos pela cidade de Orlando.  
 owner: JoJo # or company name
 first_published: 2019 # if migrating another site, the year of your first publish
 email: your-email@domain.com
@@ -58,11 +57,11 @@ testimonies:
     - name: Reginaldo Rossi
       home-country: Brasil
       testimony: Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
-      picture: images/pic03.jpg
+      picture: images/persona1.png
     - name: Bruna Chesim
       home-country: Brasil
       testimony: Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
-      picture: images/pic03.jpg
+      picture: images/persona2.jpeg
 
 
 # Build settings
