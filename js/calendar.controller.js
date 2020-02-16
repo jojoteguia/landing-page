@@ -80,9 +80,9 @@ function createCalendar(element) {
     plugins: ['dayGrid', 'googleCalendar', 'interaction'],
     defaultView: getViewType(),
     locale: 'pt-br',
-    googleCalendarApiKey: 'AIzaSyArMHu3z3sMUauCB9BnW9qGZu7mprSCcY8',
+    googleCalendarApiKey: 'AIzaSyCsZXwPf3-3QLSQwjqVhTut4NurnO6PFQk',
     events: {
-      googleCalendarId: '6jhafhe4v2fbek8arkiaogluig@group.calendar.google.com',
+      googleCalendarId: 'sbgkq4sq1ks6nqq1dq4bbfsulc@group.calendar.google.com',
     },
     displayEventTime: true,
     displayEventEnd: true,
