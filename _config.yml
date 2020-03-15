@@ -54,14 +54,22 @@ social:
   #amazon:
 
 testimonies:
-    - name: Reginaldo Rossi
-      home-country: Brasil
-      testimony: Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
-      picture: images/persona1.png
-    - name: Bruna Chesim
-      home-country: Brasil
-      testimony: Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
-      picture: images/persona2.jpeg
+    - name: Gabriel e Bruna
+      home-country: Porto Alegre - Brasil
+      testimony: Jonas é incrível e seu trabalho é muito bom. Conhece cada macete dos parques para que aproveitemos tudo o que dá a cada dia sem enfrentar filas. Obrigado pelos momentos mágicos! 
+      picture: images/gabriel_bruna.jpg
+    - name: Manuela
+      home-country: Salvador - Brasil
+      testimony: Trabalho do Jonas é impecável, tem muita paciência com adultos e crianças. Adoramos foi incrível eu super recomendo. Trabalho incrível!
+      picture: images/manoela.jpeg
+    - name: Beatriz Correa
+      home-country: Rio de Janeiro - Brasil
+      testimony: Jonas é muito animado e fez nosso passeio ser incrível. Parabéns pelo profissional que você é!
+      picture: images/beatriz_correa.jpeg
+    - name: Fernanda Damenan
+      home-country: Rio de Janeiro - Brasil
+      testimony: Jonas é uma pessoa incrível, sempre com um baita astral! Já estamos com saudades!
+      picture: images/fernanda_damenan.jpeg
 
 
 # Build settings
